@@ -8,7 +8,7 @@ const Hero = () => {
   const splitSlogan = slogan.split("");
 
   return (
-    <section className="container flex text-white justify-center items-center gap-5 flex-col md:flex-row mt-20">
+    <section className="flex text-white justify-center items-center gap-5 flex-col md:flex-row mt-20">
       <div className="w-1/2 w-full">
         <div className="max-w-[700px] mx-auto flex flex-col gap-5 ">
           <span className="text-4xl md:text-6xl font-bold text-foreground">

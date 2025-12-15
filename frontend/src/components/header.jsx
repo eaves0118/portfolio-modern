@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { cn } from "../lib/utils";
 import Theme from "./theme";
 import { DesktopNav, DesktopMobile } from "./common/desktop-nav";
+import GlassCard from "./glass-card";
 const Header = () => {
   const [scroll, setScroll] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(true);
@@ -17,19 +18,22 @@ const Header = () => {
   return (
     <header
       className={cn(
-        "container fixed z-40 transition-all left-0 right-0 duration-300 mx-auto py-4"
+        "fixed z-40 transition-all left-0 right-0 duration-300 mx-auto"
       )}
     >
-      <div className="flex flex-row gap-4 justify-between items-center">
-        <h1 className="text-gradient text-3xl font-bold cursor-pointer">
-          <Link to="/">Hieu.Dev</Link>
-        </h1>
+      <GlassCard>
+        <div className="flex flex-row gap-4 justify-between items-center py-3 px-4">
+          <h1 className="text-gradient text-3xl font-bold cursor-pointer">
+            <Link to="/">Hieu.Dev</Link>
+          </h1>
 
-        {/* Desktop-nav */}
-        <DesktopNav />
-        <DesktopMobile isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-        <Theme />
-      </div>
+          <DesktopNav />
+          <DesktopMobile
+            isMenuOpen={isMenuOpen}
+            setIsMenuOpen={setIsMenuOpen}
+          />
+        </div>
+      </GlassCard>
     </header>
   );
 };
