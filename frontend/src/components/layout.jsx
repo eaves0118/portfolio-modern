@@ -3,21 +3,22 @@ import Header from "@components/header";
 import Footer from "@components/footer";
 import { Outlet } from "react-router-dom";
 import GlassCard from "./glass-card";
-import Blobs from "./blobs";
+import StarBackground from "./star-background";
+import { cn } from "../lib/utils";
 const Layout = () => {
   return (
-    <div className="min-h-screen bg-[#0b0b13] relative overflow-hidden p-3">
-      <Blobs />
-      <div className="max-w-[800px] mx-auto px-4">
-        <GlassCard className="animate-in slide-in-from-top rounded-[42px] px-3 py-2">
-          <Header />
-        </GlassCard>
-      </div>
-      <div className="relative min-h-screen flex">
-        <Outlet />
+    <>
+      <div className="relative w-full min-h-screen bg-background text-foreground overflow-x-hidden">
+        <StarBackground />
+
+        <Header />
+
+        <div className="relative flex flex-1 min-h-screen">
+          <Outlet />
+        </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

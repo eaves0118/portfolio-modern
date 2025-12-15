@@ -47,3 +47,25 @@
     transform: translate(0, 0) scale(1);
   }
 }
+
+.text-sphere {
+  width: 420px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagcloud--item img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  opacity: 0.9;
+  filter: grayscale(1);
+  transition: all 0.3s ease;
+}
+
+.tagcloud--item:hover img {
+  filter: none;
+  transform: scale(1.25);
+}
