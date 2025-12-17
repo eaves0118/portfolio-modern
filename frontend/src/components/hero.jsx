@@ -24,7 +24,7 @@ const Hero = () => {
             {splitSlogan.map((char, index) => (
               <span
                 key={index}
-                className="inline-block animate-bounce duration-700"
+                className="inline-block animate-bounce duration-700 w-full"
                 style={{
                   animationDelay: `${index * 0.5}s`,
                   animationDuration: "2.5s",

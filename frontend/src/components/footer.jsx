@@ -12,7 +12,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="md:w-1/2 py-5">
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-end gap-4">
             <GlassCard className="p-2 rounded-full text-[#9f9fa9] hover:text-white transition-colors duration-300 cursor-pointer">
               <Facebook />
             </GlassCard>

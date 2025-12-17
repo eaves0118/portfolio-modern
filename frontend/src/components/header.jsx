@@ -32,6 +32,7 @@ const Header = () => {
             isMenuOpen={isMenuOpen}
             setIsMenuOpen={setIsMenuOpen}
           />
+          <Theme />
         </div>
       </GlassCard>
     </header>
