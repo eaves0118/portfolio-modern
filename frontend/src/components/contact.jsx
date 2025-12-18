@@ -32,9 +32,9 @@ const Contact = () => {
                 <h4 className="text-foreground/50 text-[14px]">Email</h4>
                 <a
                   href="mailto:hello@gmail.com"
-                  className="text-muted-foreground hover:text-primary transition-colors font-bold"
+                  className="text-muted-foreground hover:text-primary transition-colors font-medium"
                 >
-                  hello@gmail.com
+                  tranhieudz2024@gmail.com
                 </a>
               </div>
             </div>
@@ -46,7 +46,7 @@ const Contact = () => {
                 <h4 className="text-foreground/50 text-[14px]">Phone</h4>
                 <a
                   href="tel:0369933655"
-                  className="text-muted-foreground hover:text-primary transition-colors font-bold"
+                  className="text-muted-foreground hover:text-primary transition-colors font-medium"
                 >
                   0369933655
                 </a>
@@ -60,7 +60,7 @@ const Contact = () => {
                 <h4 className="text-foreground/50 text-[14px]">Location</h4>
                 <a
                   href="mailto:hello@gmail.com"
-                  className="text-muted-foreground hover:text-primary transition-colors font-bold"
+                  className="text-muted-foreground hover:text-primary transition-colors font-medium"
                 >
                   Viet Nam
                 </a>

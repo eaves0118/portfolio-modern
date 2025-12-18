@@ -5,7 +5,7 @@ import { cn } from "../../lib/utils";
 import { Menu, X } from "lucide-react";
 const DesktopNav = () => {
   return (
-    <div className="flex gap-4 hidden md:flex">
+    <div className="flex gap-8 hidden md:flex ">
       {navigation.map((item, index) => (
         <Link
           className="relative after:content-['']
