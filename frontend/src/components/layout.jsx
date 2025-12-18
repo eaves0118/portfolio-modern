@@ -8,16 +8,14 @@ import { cn } from "../lib/utils";
 const Layout = () => {
   return (
     <>
-      <div className="relative w-full min-h-screen bg-background text-foreground overflow-x-hidden">
-        <StarBackground />
-
+      <div className="relative w-full bg-background text-foreground overflow-x-hidden">
         <Header />
-
-        <div className="container relative flex flex-1 min-h-screen flex-col">
+        <StarBackground />
+        <div className="container min-h-screen relative flex flex-1 h-full flex-col justify-center">
           <Outlet />
         </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };

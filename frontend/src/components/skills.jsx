@@ -1,20 +1,24 @@
 import React, { useState } from "react";
 import { cn } from "../lib/utils";
+import ReactIcon from "@images/React.png";
+import Nodejs from "@images/Node.js.png";
+import TailwindCSS from "@images/TailwindCSS.png";
+import MongoDB from "@images/MongoDB.png";
+import JavaScript from "@images/JavaScript.png";
+import Docker from "@images/Docker.png";
+import Postman from "@images/Postman.png";
+import Vsc from "@images/vsc.png";
+import Nestjs from "@images/Nest.js.png";
 const skills = [
-  { name: "HTML", level: 95, category: "frontend" },
-  { name: "CSS", level: 90, category: "frontend" },
-  { name: "JavaScript", level: 85, category: "frontend" },
-  { name: "React", level: 80, category: "frontend" },
-
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "MySQL", level: 65, category: "backend" },
-
-  { name: "Git", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
-  { name: "Postman", level: 85, category: "tools" },
+  { name: "TailwindCSS", icon: TailwindCSS, level: 90, category: "frontend" },
+  { name: "JavaScript", icon: JavaScript, level: 75, category: "frontend" },
+  { name: "React", icon: ReactIcon, level: 80, category: "frontend" },
+  { name: "Node.js", icon: Nodejs, level: 80, category: "backend" },
+  { name: "MongoDB", icon: MongoDB, level: 70, category: "backend" },
+  { name: "Nestjs", icon: Nestjs, level: 65, category: "backend" },
+  { name: "Docker", icon: Docker, level: 70, category: "tools" },
+  { name: "VS Code", icon: Vsc, level: 95, category: "tools" },
+  { name: "Postman", icon: Postman, level: 85, category: "tools" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
@@ -51,7 +55,11 @@ const Skills = () => {
             key={key}
             className="bg-card p-6 rounded-lg shadow-xs card-hover"
           >
-            <div className="text-left mb-4">
+            <div className="text-left mb-4 flex items-center gap-3">
+              <div className="p-3 rounded-full bg-primary/10">
+                <img className="w-[25px] h-[25px]" src={skill.icon} alt="" />
+              </div>
+
               <h3 className="font-semibold text-lg">{skill.name}</h3>
             </div>
             <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">

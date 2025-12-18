@@ -8,7 +8,10 @@ const Hero = () => {
   const splitSlogan = slogan.split("");
 
   return (
-    <section className="flex text-white justify-center items-center gap-5 flex-col md:flex-row mt-20">
+    <section
+      id="hero"
+      className="flex text-white justify-center items-center gap-5 flex-col md:flex-row mt-20"
+    >
       <div className="w-1/2 w-full">
         <div className="max-w-[700px] mx-auto flex flex-col gap-5 ">
           <span className="text-4xl md:text-6xl font-bold text-foreground">
@@ -35,10 +38,9 @@ const Hero = () => {
             ))}
           </h2>
           <p className="text-foreground/80 text-[14px] md:text-[16px]">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
-            recusandae repellat mollitia rem, illo repellendus dolor id iusto
-            libero vel! Cupiditate numquam amet error vero, eos at vel! Illum,
-            laboriosam!
+            I am a programming enthusiast on a journey of personal growth and
+            continuous learning, always seeking to improve my skills and build
+            meaningful digital experiences.
           </p>
           <div className="max-w-[200px]">
             <Button

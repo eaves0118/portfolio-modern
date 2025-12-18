@@ -13,16 +13,17 @@ const About = () => {
             Passionate Web Developer & Tech Creator
           </h3>
           <p className="text-muted-foreground">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit aperiam fuga assumenda perferendis minima velit. Iure
-            provident ratione neque quidem, dolores impedit?
+            I’m a guy who genuinely enjoys programming. My passion for code
+            started after watching a movie about hackers — well, I thought
+            hackers looked incredibly cool back then. Since then, that curiosity
+            has slowly grown into a real interest in building things with code
+            and understanding how technology works.
           </p>
           <p className="text-muted-foreground">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit aperiam fuga assumenda perferendis minima velit. Iure
-            provident ratione neque quidem, dolores impedit?
+            Thanks for stopping by and reading a bit about me. I hope your day
+            is filled with positivity and good energy.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center max-w-[400px]">
+          <div className="flex flex-row sm:flex-row gap-4 pt-4 justify-center max-w-[400px] md:flex-row ">
             <Button
               content="Get In Touch"
               className="cosmic-button border px-4 py-2 text-white rounded-[32px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
@@ -42,7 +43,8 @@ const About = () => {
               <div className="text-left">
                 <h4 className="font-semibold text-lg">Web Development</h4>
                 <p className="text-muted-foreground">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio.
+                  Creating responsive websites and web applications with modern
+                  frameworks
                 </p>
               </div>
             </div>
@@ -55,7 +57,8 @@ const About = () => {
               <div className="text-left">
                 <h4 className="font-semibold text-lg">UI/UX Design</h4>
                 <p className="text-muted-foreground">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio.
+                  Designing intuitive user interfaces and seamless user
+                  experiences
                 </p>
               </div>
             </div>
@@ -68,7 +71,8 @@ const About = () => {
               <div className="text-left">
                 <h4 className="font-semibold text-lg">Project Management</h4>
                 <p className="text-muted-foreground">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio.
+                  Leading projects from conception to completion with agile
+                  methodologies
                 </p>
               </div>
             </div>

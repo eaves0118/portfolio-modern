@@ -18,23 +18,18 @@ const Header = () => {
   return (
     <header
       className={cn(
-        "fixed z-40 transition-all left-0 right-0 duration-300 mx-auto"
+        "fixed z-40 transition-all left-0 right-0 duration-300 mx-auto bg-background"
       )}
     >
-      <GlassCard>
-        <div className="flex flex-row gap-4 justify-between items-center py-3 px-4">
-          <h1 className="text-gradient text-3xl font-bold cursor-pointer">
-            <Link to="/">Hieu.Dev</Link>
-          </h1>
+      <div className="flex flex-row gap-4 justify-between items-center py-3 px-4">
+        <h1 className="text-gradient text-3xl font-bold cursor-pointer">
+          <Link to="/">Hieu.Dev</Link>
+        </h1>
 
-          <DesktopNav />
-          <DesktopMobile
-            isMenuOpen={isMenuOpen}
-            setIsMenuOpen={setIsMenuOpen}
-          />
-          <Theme />
-        </div>
-      </GlassCard>
+        <DesktopNav />
+        <DesktopMobile isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        <Theme />
+      </div>
     </header>
   );
 };

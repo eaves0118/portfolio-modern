@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 const StarBackground = () => {
   const [stars, setStars] = useState([]);
-  const [meteors, setMeteors] = useState([]);
 
   useEffect(() => {
     generateStars();
@@ -26,8 +25,8 @@ const StarBackground = () => {
       newStars.push({
         id: i,
         size: Math.random() * 3 + 1,
-        x: Math.random() * window.innerWidth, // pixel
-        y: Math.random() * window.innerHeight, // pixel
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
         opacity: Math.random() * 0.5 + 0.5,
         animationDuration: Math.random() * 4 + 2,
       });

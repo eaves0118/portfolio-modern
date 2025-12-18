@@ -1,22 +1,22 @@
 export const navigation = [
   {
-    content: "Blogs",
-    path: "#",
+    content: "Home",
+    path: "#home",
   },
   {
-    content: "Programming",
-    path: "#",
-  },
-  {
-    content: "Project",
-    path: "#",
+    content: "About",
+    path: "#about",
   },
   {
     content: "Skills",
-    path: "#",
+    path: "#skills",
   },
   {
-    content: "About me",
-    path: "#",
+    content: "Projects",
+    path: "#projects",
+  },
+  {
+    content: "Contact",
+    path: "#contact",
   },
 ];
