@@ -8,7 +8,10 @@ import { cn } from "../lib/utils";
 const Layout = () => {
   return (
     <>
-      <div className="relative w-full bg-background text-foreground overflow-x-hidden">
+      <div
+        className="relative w-full overflow-x-hidden text-foreground
+  bg-gradient-to-b from-black via-[#050510] to-[#02020a]"
+      >
         <Header />
         <StarBackground />
         <div className="container min-h-screen relative flex flex-1 h-full flex-col justify-center">

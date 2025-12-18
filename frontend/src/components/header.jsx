@@ -6,7 +6,7 @@ import { DesktopNav, DesktopMobile } from "./common/desktop-nav";
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       setScroll(window.scrollY > 10);
