@@ -32,7 +32,7 @@ const Theme = () => {
       onClick={toggleTheme}
       className={cn(
         "max-sm:hidden rounded-full transition-colors duration-300",
-        "focus:outline-hidden"
+        "focus:outline-hidden "
       )}
     >
       {isDarkMode ? (

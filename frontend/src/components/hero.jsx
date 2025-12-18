@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { Facebook, GitHub, Mail } from "./common/icons";
 import GlassCard from "./glass-card";
 const Hero = () => {
-  const slogan = "Hieu.Tran";
+  const slogan = "BeneathEaves";
   const splitSlogan = slogan.split("");
 
   return (
